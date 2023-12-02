@@ -39,6 +39,54 @@
          <!--cache control-->
          <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
          <meta http-equiv="Pragma" content="no-cache">
+  <style>
+    .header-hero-image {
+    position: relative;
+    /* Ensure positioning context for the overlay */
+    display: inline-block;
+}
+
+    .hero-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+h5 {
+  font-weight: 200;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 1.9em;
+  color: #000;
+  padding: 0;
+  line-height: 2 !important;
+  text-transform: none;
+  font-weight: 600;
+}
+
+h5 span {
+  color: red;
+  animation-delay: 2s;
+  font-weight: 600;
+  
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+  cursor: none;
+}
+
+  </style>       
 </head>
 
 <body>
@@ -128,12 +176,24 @@
                     </div>
                 </div> <!-- row -->
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
-                            <img src="assets/images/header-hero.png" alt="hero">
-                        </div> <!-- header hero image -->
+                    <div class="col-lg-12 text-center">
+                        <div class="hero-container" style="position: relative;">
+                            <img src="assets/images/header-hero.png" alt="hero" class="header-hero-image wow" data-wow-duration="1.3s" data-wow-delay="1.4s">
+                            <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                               <!-- <h2 class="animation-text">Your Self-Writing Text</h2> -->
+                                <h5>
+                                    
+                                    <span
+                                      class="txt-rotate"
+                                      data-period="2000"
+                                      data-rotate='[ "Write collaboratively in Google Docs.", "Publish anywhere, effortlessly.", "Automate tasks and focus on what matters most – creating great content!" ]'
+                                    ></span>
+                                  </h5>
+                            </div>
+                        </div> <!-- hero-container -->
                     </div>
-                </div>  <!-- row -->
+                </div>
+                
             </div> <!-- container -->
             <div id="particles-1" class="particles"></div>
         </div> <!-- header hero -->
@@ -212,7 +272,7 @@
                         </div>
                     </div> <!-- single services -->
                 </div>
-                <div class="col-lg-4 col-md-7 col-sm-8">
+              <!--  <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
@@ -225,7 +285,7 @@
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
-                </div>
+               <!-- </div>-->
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -303,7 +363,7 @@
     
     <!--====== BLOG PART START ======-->
     
-    <section id="blog" class="blog-area pt-120">
+   <!-- <section id="blog" class="blog-area pt-120">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -311,9 +371,9 @@
                         <div class="line"></div>
                         <h3 class="title"><span>Our Recent</span> Blog Posts</h3>
                     </div> <!-- section title -->
-                </div>
+               <!-- </div>
             </div> <!-- row -->
-            <div class="row justify-content-center">
+            <!--<div class="row justify-content-center">
                 <div class="col-lg-4 col-md-7">
                     <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="blog-image">
@@ -328,7 +388,7 @@
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single blog -->
-                </div> 
+                <!--</div> 
                 <div class="col-lg-4 col-md-7">
                     <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="blog-image">
@@ -343,8 +403,8 @@
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single blog -->
-                </div> 
-                <div class="col-lg-4 col-md-7">
+               <!-- </div> -->
+               <!-- <div class="col-lg-4 col-md-7">
                     <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                         <div class="blog-image">
                             <img src="assets/images/blog-3.jpg" alt="blog">
@@ -358,10 +418,10 @@
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single blog -->
-                </div> 
+                <!--</div> 
             </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+      <!--  </div> <!-- container -->
+   <!-- </section>-->
     
     <!--====== BLOG PART ENDS ======-->
     
@@ -523,5 +583,58 @@
     <script src="assets/js/main.js"></script>
     
 </body>
-
+<script>let TxtRotate = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = "";
+    this.tick();
+    this.isDeleting = false;
+  };
+  
+  TxtRotate.prototype.tick = function () {
+    this.el.style.cursor = 'none';
+    let i = this.loopNum % this.toRotate.length;
+    let fullTxt = this.toRotate[i];
+  
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+  
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+  
+    let that = this;
+    let delta = 100 - Math.random() * 100;
+  
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+  
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+  
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
+  
+  window.onload = function () {
+    let elements = document.getElementsByClassName("txt-rotate");
+    for (let i = 0; i < elements.length; i++) {
+      let toRotate = elements[i].getAttribute("data-rotate");
+      let period = elements[i].getAttribute("data-period");
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+  };</script>
 </html>
