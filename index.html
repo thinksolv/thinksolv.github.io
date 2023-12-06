@@ -3,105 +3,167 @@
 
 <head>
     <meta charset="utf-8">
-    
+
     <!--====== Title ======-->
     <title>Thinksolv - Building solutions thoughtfully!</title>
-    
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-        
+
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.css">
-        
+
     <!--====== Magnific Popup CSS ======-->
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        
+
     <!--====== Slick CSS ======-->
     <link rel="stylesheet" href="assets/css/slick.css">
-        
+
     <!--====== Line Icons CSS ======-->
     <link rel="stylesheet" href="assets/css/LineIcons.css">
-        
+
     <!--====== Font Awesome CSS ======-->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        
+
     <!--====== Bootstrap CSS ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    
+
     <!--====== Default CSS ======-->
     <link rel="stylesheet" href="assets/css/default.css">
-    
+
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-         <!--cache control-->
-         <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
-         <meta http-equiv="Pragma" content="no-cache">
-  <style>
-    .header-hero-image {
-    position: relative;
-    /* Ensure positioning context for the overlay */
-    display: inline-block;
-}
+    <!--cache control-->
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <style>
+        .header-hero-image {
+            position: relative;
+            /* Ensure positioning context for the overlay */
+            display: inline-block;
+        }
 
-    .hero-container {
-    position: relative;
-    display: inline-block;
-}
+        .hero-container {
+            position: relative;
+            display: inline-block;
+        }
 
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
 
 
-h5 {
-  font-weight: 200;
-  text-align: center;
-  font-family: Poppins, sans-serif;
-  font-size: 1.9em;
-  color: #000;
-  padding: 0;
-  line-height: 2 !important;
-  text-transform: none;
-  font-weight: 600;
-}
 
-h5 span {
-  color: red;
-  animation-delay: 2s;
-  font-weight: 600;
-  
-}
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 768px) {
-    h5 {
-        font-size: 1.3em; /* Adjust the font size for mobile devices */
-        line-height: 1.5; /* Adjust line height for mobile */
-    }
-}
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-  cursor: none;
-}
+        h5 {
+            font-weight: 200;
+            text-align: center;
+            font-family: Poppins, sans-serif;
+            font-size: 1.9em;
+            color: #000;
+            padding: 0;
+            line-height: 2 !important;
+            text-transform: none;
+            font-weight: 600;
+        }
 
-  </style>       
+        h5 span {
+            color: red;
+            animation-delay: 2s;
+            font-weight: 600;
+
+        }
+
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 768px) {
+            h5 {
+                font-size: 1.3em;
+                /* Adjust the font size for mobile devices */
+                line-height: 1.5;
+                /* Adjust line height for mobile */
+            }
+        }
+
+        .txt-rotate>.wrap {
+            border-right: 0.08em solid #666;
+            cursor: none;
+        }
+
+        .testimonial-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .testimonial {
+            font-family: sans-serif;
+            font-size: 20px;
+            line-height: 1.5;
+            margin: 20px;
+            padding: 20px;
+
+            width: calc(70% - 40px);
+
+        }
+
+        .testimonial strong {
+            font-weight: bold;
+        }
+
+        .testimonial .highlight {
+            color: #ff5722;
+        }
+
+        .testimonial img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+            
+            margin-bottom: 10px;
+            color: #6A6972;
+        }
+
+        .about-image {
+            margin-top: 100px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .testimonial-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->    
-   
-   
+  <![endif]-->
+
+
     <!--====== PRELOADER PART START ======-->
 
     <div class="preloader">
@@ -122,9 +184,9 @@ h5 span {
     </div>
 
     <!--====== PRELOADER PART ENDS ======-->
-    
+
     <!--====== HEADER PART START ======-->
-    
+
     <header class="header-area">
         <div class="navbar-area">
             <div class="container">
@@ -132,9 +194,11 @@ h5 span {
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.svg" alt="Logo">
+                                <img src="assets/images/logo.png" alt="Logo">
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -146,294 +210,159 @@ h5 span {
                                         <a class="page-scroll" href="#home">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#features">Features</a>
+                                        <a class="page-scroll" href="#products">Products</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#about">About</a>
-                                    </li>
+                                    
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#facts">Why</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#team">Team</a>
-                                    </li>
-                                    <li class="nav-item">
+                                    
+                                    <!-- <li class="nav-item">
                                         <a class="page-scroll" href="#blog">Blog</a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </div> <!-- navbar collapse -->
-                            
-                            
+
+
                         </nav> <!-- navbar -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- navbar area -->
-        
+
         <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="header-hero-content text-center">
-                            <h2 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Building solutions <i>thoughtfully</i></h2>
-                            <h3 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">for <b>web publishers</b> around the world</h3>
-                         <!--   <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>-->
-                         <!--   <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Get Started</a>-->
+                            <h2 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                                Building solutions <i>thoughtfully</i></h2>
+                            <h3 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">for
+                                <span>content creators</span> around the world
+                            </h3>
+                            <!--   <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>-->
+                            <!--   <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Get Started</a>-->
                         </div> <!-- header hero content -->
                     </div>
                 </div> <!-- row -->
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="hero-container" style="position: relative;">
-                            <img src="assets/images/header-hero.png" alt="hero" class="header-hero-image wow" data-wow-duration="1.3s" data-wow-delay="1.4s">
-                            <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                               <!-- <h2 class="animation-text">Your Self-Writing Text</h2> -->
+                            <img src="assets/images/header-hero.png" alt="hero" class="header-hero-image wow"
+                                data-wow-duration="1.3s" data-wow-delay="1.4s">
+                            <div class="overlay"
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <!-- <h2 class="animation-text">Your Self-Writing Text</h2> -->
                                 <h5>
-                                    
-                                    <span
-                                      class="txt-rotate"
-                                      data-period="2000"
-                                      data-rotate='[ "Write collaboratively in Google Docs.", "Publish anywhere, effortlessly." ]'
-                                    ></span>
-                                  </h5>
+
+                                    <span class="txt-rotate" data-period="2000"
+                                        data-rotate='[ "Write collaboratively in Google Docs.", "Publish anywhere, effortlessly." ]'></span>
+                                </h5>
                             </div>
                         </div> <!-- hero-container -->
                     </div>
                 </div>
-                
+
             </div> <!-- container -->
             <div id="particles-1" class="particles"></div>
         </div> <!-- header hero -->
     </header>
-    
+
     <!--====== HEADER PART ENDS ======-->
-    
+
     <!--====== BRAMD PART START ======-->
-    
-    <div class="brand-area pt-90">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="brand-logo d-flex align-items-center justify-content-center justify-content-md-between">
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <img src="assets/images/brand-1.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                            <img src="assets/images/brand-2.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <img src="assets/images/brand-3.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                            <img src="assets/images/brand-4.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                            <img src="assets/images/brand-5.png" alt="brand">
-                        </div> <!-- single logo -->
-                    </div> <!-- brand logo -->
-                </div>
-            </div>   <!-- row -->
-        </div> <!-- container -->
-    </div>
-    
+
+
+
     <!--====== BRAMD PART ENDS ======-->
-    
+
+
     <!--====== SERVICES PART START ======-->
-    
-    <section id="features" class="services-area pt-120">
+
+    <section id="products" class="services-area pt-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Clean and simple design, <span> Comes with everything you need to get started!</span></h3>
+                        <h3 class="title">Craft great content, our tools will handle the rest.</h3>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s"
+                        data-wow-delay="0.2s">
                         <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
-                            <i class="lni-baloon"></i>
+                            <img class="shape" src="assets/images/md_icon_96.png" alt="shape">
+                           
+                            
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Clean</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                            <h4 class="services-title"><a href="#">Docs to Markdown Pro</a></h4>
+                            <p class="text">The most powerful Google Docs to Markdown converter to effortlessly
+                                streamline your workflow and save time.</p>
+                            <a class="more" href="https://www.docstomarkdown.pro" target="_blank">Learn More <i
+                                    class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
                         <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
+                            <img class="shape" src="assets/images/wp_icon_96.png" alt="shape">
+                            
                             <i class="lni-cog"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Robust</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                            <h4 class="services-title"><a href="#">Docs to WP Pro</a></h4>
+                            <p class="text"><br>The most powerful Google Docs to WordPress converter to streamline your
+                                workflow and save time.</p>
+                            <a class="more" href="#" disabled>Coming soon!<i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
-                </div>
-              <!--  <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
-                            <i class="lni-bolt-alt"></i>
-                        </div>
-                        <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Powerful</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single services -->
-               <!-- </div>-->
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== SERVICES PART ENDS ======-->
-    
-    <!--====== ABOUT PART START ======-->
-    
-   
-    
-    <!--====== ABOUT PART ENDS ======-->
-    
-    <!--====== ABOUT PART START ======-->
-    
-    
-
-
-    <!--====== ABOUT PART START ======-->
-    
-    
-    
-    <!--====== ABOUT PART ENDS ======-->
-
-    
-    <!--====== ABOUT PART ENDS ======-->
-    
-    <!--====== VIDEO COUNTER PART START ======-->
-    
-    
-    <!--====== VIDEO COUNTER PART ENDS ======-->
-    
-    <!--====== TEAM PART START ======-->
-
-    <section id="team" class="team-area pt-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="section-title text-center pb-30">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"><span>Meet Our</span> Team Members</h3>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="team-image">
-                            <img src="assets/images/team-1.png" alt="Team">
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="holder-name"><a href="#">Vikram Aruchamy</a></h5>
-                            <p class="text">Founder and CEO</p>
-                        </div>
-                    </div> <!-- single team -->
                 </div>
                 
-                </div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
-    <!--====== TEAM PART ENDS ======-->
-    
-    <!--====== TESTIMONIAL PART START ======-->
-    
 
-    <!--====== TESTIMONIAL PART ENDS ======-->
     
-    <!--====== BLOG PART START ======-->
-    
-   <!-- <section id="blog" class="blog-area pt-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title pb-35">
-                        <div class="line"></div>
-                        <h3 class="title"><span>Our Recent</span> Blog Posts</h3>
-                    </div> <!-- section title -->
-               <!-- </div>
-            </div> <!-- row -->
-            <!--<div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7">
-                    <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="blog-image">
-                            <img src="assets/images/blog-1.jpg" alt="blog">
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li>Posted By: <a href="#">Admin</a></li>
-                                <li>03 June, 2023</li>
-                            </ul>
-                            <p class="text">Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single blog -->
-                <!--</div> 
-                <div class="col-lg-4 col-md-7">
-                    <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="blog-image">
-                            <img src="assets/images/blog-2.jpg" alt="blog">
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li>Posted By: <a href="#">Admin</a></li>
-                                <li>03 June, 2023</li>
-                            </ul>
-                            <p class="text">Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single blog -->
-               <!-- </div> -->
-               <!-- <div class="col-lg-4 col-md-7">
-                    <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <div class="blog-image">
-                            <img src="assets/images/blog-3.jpg" alt="blog">
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li>Posted By: <a href="#">Admin</a></li>
-                                <li>03 June, 2023</li>
-                            </ul>
-                            <p class="text">Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single blog -->
-                <!--</div> 
-            </div> <!-- row -->
-      <!--  </div> <!-- container -->
-   <!-- </section>-->
-    
-    <!--====== BLOG PART ENDS ======-->
-    
-    <!--====== FOOTER PART START ======-->
-    
+  
+    <section id="why" class="services-area pt-120">
+        <div class="line m-auto"></div>
+        <div class="testimonial-wrapper">
+            <div class="testimonial">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-title text-center pb-40">
+                            <div class="line m-auto"></div>
+                            <p class="title">Why <span class="highlight">Vikram</span>, CEO of <span class="highlight">thinksolv</span>, believes he's the right person to build these tools?
+                            </p>
+                        </div> <!-- section title -->
+                    </div>
+                </div>
+                <br>
+                Writer, blogger, architect. Building tools to empower your writing journey.<br>
+                <br>
+                10 years of crafting
+                software
+                solutions at <span class="highlight">Robert Bosch Gmbh</span> + 6 years of publishing to <span
+                    class="highlight">2.5 million readers</span> = the perfect blend to create <span
+                    class="highlight">Docs
+                    to Markdown Pro</span> and <span class="highlight">Docs to WP Pro</span>.
+                <br>
+                <br>
+                <strong>Tools built by a writer, for writers.</strong>
+            </div>
+            <img src="assets/images/vikram_photo_circle.png" alt="Your Photo" width="30%" height="auto"
+                class="about-image wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+        </div>
+    </section>
+    <div class="line m-auto"></div>
+   
+
     <footer id="footer" class="footer-area pt-120">
         <div class="container">
             <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -451,27 +380,29 @@ h5 span {
                             </form>
                         </div>
                     </div>
-                 </div> <!-- row -->
+                </div> <!-- row -->
             </div> <!-- subscribe area -->
             <div class="footer-widget pb-100">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                             <a class="logo" href="#">
-                                <img src="assets/images/logo.svg" alt="logo">
+                                <img src="assets/images/logo.png" alt="logo">
                             </a>
                             <p class="text">Thinksolv is building solutions for web publishers around the world.</p>
                             <ul class="social">
-                               <!-- <li><a href="#"><i class="lni-facebook-filled"></i></a></li>-->
-                                <li><a href="https://twitter.com/vikramaruchamy"><i class="lni-twitter-filled"></i></a></li>
-                               <!--  <li><a href="#"><i class="lni-instagram-filled"></i></a></li>-->
-                                <li><a href="https://www.linkedin.com/in/vikramaruchamy/"><i class="lni-linkedin-original"></i></a></li>
+                                <!-- <li><a href="#"><i class="lni-facebook-filled"></i></a></li>-->
+                                <li><a href="https://twitter.com/vikramaruchamy"><i class="lni-twitter-filled"></i></a>
+                                </li>
+                                <!--  <li><a href="#"><i class="lni-instagram-filled"></i></a></li>-->
+                                <li><a href="https://www.linkedin.com/in/vikramaruchamy/"><i
+                                            class="lni-linkedin-original"></i></a></li>
                             </ul>
                         </div> <!-- footer about -->
                     </div>
                     <div class="col-lg-5 col-md-7 col-sm-7">
                         <div class="footer-link d-flex mt-50 justify-content-md-between">
-                          <!--  <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <!--  <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                                 <div class="footer-title">
                                     <h4 class="title">Quick Link</h4>
                                 </div>
@@ -483,7 +414,7 @@ h5 span {
                                 
                                 </ul>
                             </div> <!-- footer wrapper -->
-                         <!--   <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                            <!--   <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                                 <div class="footer-title">
                                     <h4 class="title">Resources</h4>
                                 </div>
@@ -506,7 +437,8 @@ h5 span {
                                 <li>+91 7092 00 11 22</li>
                                 <li>info@thinksolv.com</li>
                                 <li>www.thinksolv.com</li>
-                                <li>Forge.Factory, KCT Tech park, Thudiyalur Road, Saravanampatti, Coimbatore - 641 049.</li>
+                                <li>Forge.Factory, KCT Tech park, Thudiyalur Road, Saravanampatti, Coimbatore - 641 049.
+                                </li>
                             </ul>
                         </div> <!-- footer contact -->
                     </div>
@@ -517,7 +449,8 @@ h5 span {
                     <div class="col-lg-12">
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-content">
-                                <p class="text">Maintained by <a href="https://www.thinksolv.com" rel="nofollow">Thinksolv Technologies Private Limited.</a></p>
+                                <p class="text">Maintained by <a href="https://www.thinksolv.com"
+                                        rel="nofollow">Thinksolv Technologies Private Limited.</a></p>
                             </div> <!-- copyright content -->
                         </div> <!-- copyright -->
                     </div>
@@ -526,18 +459,18 @@ h5 span {
         </div> <!-- container -->
         <div id="particles-2"></div>
     </footer>
-    
+
     <!--====== FOOTER PART ENDS ======-->
-    
+
     <!--====== BACK TOP TOP PART START ======-->
 
     <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
 
-    <!--====== BACK TOP TOP PART ENDS ======-->   
-    
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
     <!--====== PART START ======-->
-    
-<!--
+
+    <!--
     <section class="">
         <div class="container">
             <div class="row">
@@ -546,7 +479,7 @@ h5 span {
         </div>
     </section>
 -->
-    
+
     <!--====== PART ENDS ======-->
 
 
@@ -555,93 +488,94 @@ h5 span {
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    
+
     <!--====== Bootstrap js ======-->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    
+
     <!--====== Plugins js ======-->
     <script src="assets/js/plugins.js"></script>
-    
+
     <!--====== Slick js ======-->
     <script src="assets/js/slick.min.js"></script>
-    
+
     <!--====== Ajax Contact js ======-->
     <script src="assets/js/ajax-contact.js"></script>
-    
+
     <!--====== Counter Up js ======-->
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
-    
+
     <!--====== Magnific Popup js ======-->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    
+
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrolling-nav.js"></script>
-    
+
     <!--====== wow js ======-->
     <script src="assets/js/wow.min.js"></script>
-    
+
     <!--====== Particles js ======-->
     <script src="assets/js/particles.min.js"></script>
-    
+
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    
+
 </body>
 <script>let TxtRotate = function (el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = "";
-    this.tick();
-    this.isDeleting = false;
-  };
-  
-  TxtRotate.prototype.tick = function () {
-    this.el.style.cursor = 'none';
-    let i = this.loopNum % this.toRotate.length;
-    let fullTxt = this.toRotate[i];
-  
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-  
-    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-  
-    let that = this;
-    let delta = 100 - Math.random() * 100;
-  
-    if (this.isDeleting) {
-      delta /= 2;
-    }
-  
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === "") {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
-    }
-  
-    setTimeout(function () {
-      that.tick();
-    }, delta);
-  };
-  
-  window.onload = function () {
-    let elements = document.getElementsByClassName("txt-rotate");
-    for (let i = 0; i < elements.length; i++) {
-      let toRotate = elements[i].getAttribute("data-rotate");
-      let period = elements[i].getAttribute("data-period");
-      if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-  };</script>
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        this.el.style.cursor = 'none';
+        let i = this.loopNum % this.toRotate.length;
+        let fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        let that = this;
+        let delta = 100 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        let elements = document.getElementsByClassName("txt-rotate");
+        for (let i = 0; i < elements.length; i++) {
+            let toRotate = elements[i].getAttribute("data-rotate");
+            let period = elements[i].getAttribute("data-period");
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+    };</script>
+
 </html>
