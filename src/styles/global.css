@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+        "liga" 1,
+        "calt" 1,
+        /* Contextual Alternates */
+        "dlig" 1,
+        /* Discretionary Ligatures */
+        "ss07" 1,
+        /* fSquare punctuation */
+        "ss08" 1,
+        /* Square quotes */
+        "zero" 1,
+        /* Slashed zero */
+        "tnum" 1,
+        /* Tabular numbers */
+        "cv03",
+        /* Open six */
+        "cv04" 1,
+        /* Open nine */
+        "cv01" 1,
+        /* Alternate one */
+        "cv09",
+        /* Flat-top three */
+        "cv02" 1;
+    /* Open 4 */
+
+}
+
+@supports (font-variation-settings: normal) {
+
+    /* Use variable font if supported */
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+.less-padding {
+    padding: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-heading {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.hero-subheading {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 0.5s;
+}
