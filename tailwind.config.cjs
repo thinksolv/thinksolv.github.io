@@ -36,8 +36,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        display: ["Bricolage Grotesque", ...defaultTheme.fontFamily.sans],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        display: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
     },
   },
