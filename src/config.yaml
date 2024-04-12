@@ -79,7 +79,7 @@ ui:
         heading: Poppins
       colors:
         default: rgb(70 72 74)
-        heading: rgb(0 0 0)
+        heading: rgb(70 72 74)
         muted: rgb(16 16 16 / 66%)
         bgPage: rgb(255 255 255)
         primary: rgb(39 114 237)
