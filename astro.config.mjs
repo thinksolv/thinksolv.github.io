@@ -57,5 +57,5 @@ export default defineConfig({
       }
     }
   },
-  site: 'https://www.docstopdf.pro'
+  site: 'https://www.thinksolv.com'
 });
