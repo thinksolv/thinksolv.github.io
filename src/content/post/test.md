@@ -91,7 +91,7 @@ Also, this method doesn't include built-in SEO features.
 
 Transferring content from Google Docs to WordPress efficiently is essential for a smooth workflow. This tutorial has presented three methods: manual copy-paste, using the Docs to WP Pro add-on, and converting to Markdown. Each method has its own advantages and disadvantages, so the best choice for you will depend on your specific needs and preferences.
 
-- **Manual copy-paste ** is a simple option but requires manual adjustments for formatting and images.
+- **Manual copy-paste** is a simple option but requires manual adjustments for formatting and images.
 - **Docs to WP Pro** offers features like automated internal linking, SEO optimizations and image handling, but may require additional investment.
 - **Converting to Markdown** preserves formatting but requires manual image handling and lacks SEO optimization features.
 
