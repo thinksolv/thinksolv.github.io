@@ -34,11 +34,11 @@ export const headerData = {
       links: [
         {
           text: "Terms",
-          href: getPermalink("/terms-of-service"),
+          href: getPermalink("/terms"),
         },
         {
           text: "Privacy policy",
-          href: getPermalink("/privacy-policy"),
+          href: getPermalink("/privacy"),
         },
       ],
     },
