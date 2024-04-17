@@ -5,7 +5,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 
 _Last updated_: January 06, 2023
 
-This privacy policy sets out how Unwrapped AB collects, processes and uses your Personal Information through your use of our Services.
+This privacy policy sets out how we collect, process and uses your Personal Information through your use of our Services.
 
 ### Definitions
 
