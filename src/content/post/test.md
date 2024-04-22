@@ -1,7 +1,7 @@
 ---
 title: How to Publish Google Docs to WordPress in an SEO-Optimized Way
 description: this is the test seo meta data
-slug: my-test-file-test
+slug: test-slug
 excerpt: This post explains how to publish SEo optimized posts from Google Docs to WordPress
 metadata:
   robots:

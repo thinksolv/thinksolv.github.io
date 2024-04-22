@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@vikramaruchamy'
+    site: '@vikramaruchamy'
     cardType: summary_large_image
 
 i18n:
@@ -69,7 +69,7 @@ analytics:
       id:  "G-YGZPCFS806"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   tokens:
     default:
