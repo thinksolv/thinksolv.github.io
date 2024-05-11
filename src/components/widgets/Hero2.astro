@@ -39,7 +39,7 @@ const {
         {
           title && (
             <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+              class="text-2xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
               set:html={title}
             />
           )
@@ -68,7 +68,7 @@ const {
       <div class="basis-1/2">
         {
           image && (
-            <div class="relative m-auto max-w-5xl">
+            <div class="relative m-auto ">
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
@@ -86,6 +86,15 @@ const {
           )
         }
       </div>
+      
     </div>
+    <div
+        class="hero-subheading text-gray-500"
+        style=" text-align: center;font-size: 24px; color: #bebaba;"
+      >
+        Our products are used by a growing community of over 4,000 people
+        worldwide.
+      </div>
   </div>
+  
 </section>

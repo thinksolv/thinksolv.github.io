@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Thinksolvhero from '../components/landing/thinksolvHero.astro';
 import SectionOne from '../components/landing/SectionOne.astro';
 const metadata = {
@@ -34,9 +35,25 @@ const metadata = {
 
 
 
-  
+  <Hero2
+  tagline=""
+  actions={[
+    { variant: 'primary',  text: 'Our Products', href: '#features' },
+    { text: 'Our Services', href: '#features' },
+  ]}
+  image={{
+    src: 'https://www.thinksolv.com/hero-banner.webp',
+    alt: 'AstroWind Hero Image',
+  }}
+>
+  <Fragment slot="title">
+    <span class="hero-heading">Building soultions thoughtfully  </span>
+  </Fragment>
 
-  <Thinksolvhero />
-
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline hero-subheading">
+     For Google Workspace™ users across world.
+  </Fragment>
+</Hero2>
   <SectionOne />
 </Layout>
