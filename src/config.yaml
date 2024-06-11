@@ -9,7 +9,7 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Thinksolv
+    default: Google Workspace Automation
     template: '%s'
   description: " Building solutions thoughtfully for Google Workspace users"
   robots:
