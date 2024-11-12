@@ -1,22 +1,26 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Image from 'next/image';
+import './Hero.css';
 
 const HeroSection = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="overflow-x-hidden bg-gray-50 h-screen">
+    <div className="bg-gray-50">
       <header className="py-4 md:py-6">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="#" title="Home" className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
-                <img
-                  src="/Thinksolv Logo 1.png"
+                <Image
+                  src="/Thinksolv Logo.png"
                   alt="Logo"
-                  style={{ height: '80px', width: 'auto' }}
+                  width={240}        // specify the width
+                  height={100}       // specify the height
+                  priority={true}   // optional: prioritize image loading for LCP improvement
                 />
               </a>
             </div>
@@ -76,31 +80,30 @@ const HeroSection = () => {
         </div>
       </header>
 
-      {/* Full Page Hero Section */}
-      <section className="h-full flex items-center justify-center bg-gray-50 mt-0 -mt-20">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 w-full h-full">
-          <div className="h-full flex flex-col lg:flex-row items-center justify-center">
+      {/* Hero Section */}
+      <section className="flex items-center justify-center bg-gray-50 py-20">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 w-full">
+          <div className="flex flex-col lg:flex-row items-center justify-center">
 
             {/* Text Section - Left */}
             <div className="lg:w-1/2 max-w-lg text-center lg:text-left mb-6 lg:mb-0">
-              {/* Removed logo background before the text */}
-              {/* <div className="flex justify-center lg:justify-start mb-4">
-                <img
-                  src="/Google Cloud.png" // Your logo source here
-                  alt="Logo"
-                  className="h-14 w-auto"
-                />
-              </div> */}
-
-              <p className="text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl">
+              <p className="text-4xl font-bold text-black sm:text-5xl lg:text-6xl">
                 Building Solutions
-                <span className="relative inline-flex">
-                  <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
-                  <span className="relative"> Thoughtfully </span>
+              </p>
+              <p className="text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl mt-2">
+                <span className="relative inline-flex animate-thoughtfully">
+                  <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-80 w-full h-full absolute inset-0"></span>
+                  <span className="relative block">
+                    {["T", "h", "o", "u", "g", "h", "t", "f", "u", "l", "l", "y"].map((letter, index) => (
+                      <span key={index} className="inline-block opacity-0 animate-letter" style={{ animationDelay: `${index * 0.1}s` }}>
+                        {letter}
+                      </span>
+                    ))}
+                  </span>
                 </span>
               </p>
-              <p className= "text-gray-900 mt-10"> " As an Official Google Workspace™ Build Partner, we build tailored automation solutions to streamline your internal workflows, improving productivity and saving you time."</p>
 
+              <p className="text-black text-base mt-10 animate-typing">"Supercharge your productivity with our powerful automations"</p>
               <div className="mt-9 flex justify-center lg:justify-start space-x-4">
                 <a href="#" className="px-8 py-3 text-lg font-bold text-white bg-gray-900 rounded-xl hover:bg-gray-600">
                   Get Started
@@ -110,20 +113,17 @@ const HeroSection = () => {
 
             {/* Video Section - Right */}
             <div className="lg:w-1/2 p-4 flex justify-center relative">
-              {/* Gradient Shadow matching the Thoughtfully Text Background */}
               <div 
-                className="absolute inset-0 opacity-50 rounded-lg pointer-events-none"
+                className="absolute inset-0 opacity-80 rounded-lg pointer-events-none"
                 style={{
-                  background: 'linear-gradient(to right, #44BCFF, #FF44EC, #FF675E)', // Using the same gradient as "Thoughtfully"
-                  filter: 'blur(15px) brightness(0.8)', // Soft blur effect with brightness
-                  borderRadius: '30px', // Rounded corners for organic look
+                  background: 'linear-gradient(to right, #44BCFF, #FF44EC, #FF675E)', 
+                  filter: 'blur(15px) brightness(0.8)', 
+                  borderRadius: '30px', 
                   zIndex: 0
                 }}
               ></div>
-
-              {/* Increased the height of the video */}
               <video
-                className="w-full h-[400px] max-w-full rounded-lg shadow-xl relative z-10" // Increased height to 900px
+                className="w-full h-[400px] max-w-full rounded-lg shadow-xl relative z-10"
                 controls
                 src="https://www.example.com/your-video.mp4"
               >

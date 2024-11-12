@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Footer = () => {        
     return (
@@ -7,12 +8,14 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
             <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <a href="#" title="Home" className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
-                <img
-                  src="/Thinksolv Logo 1.png"
-                  alt="Logo"
-                  style={{ height: '80px', width: 'auto' }}
-                />
-              </a>
+            <Image
+              src="/Thinksolv Logo.png"
+              alt="Logo"
+              width={240}        // specify the width
+              height={100}       // specify the height
+              priority={true}   // optional: prioritize image loading for LCP improvement
+            />
+          </a>
                 <p className="text-base leading-relaxed text-gray-600 mt-7"></p>
 
                 <ul className="flex items-center space-x-3 mt-9">
