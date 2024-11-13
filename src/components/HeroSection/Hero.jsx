@@ -92,8 +92,8 @@ const HeroSection = () => {
               </p>
               <p className="text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl mt-2">
                 <span className="relative inline-flex animate-thoughtfully">
-                  <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-80 w-full h-full absolute inset-0"></span>
-                  <span className="relative block">
+                <span className="hero-gradient-bg"></span>
+                <span className="relative block">
                     {["T", "h", "o", "u", "g", "h", "t", "f", "u", "l", "l", "y"].map((letter, index) => (
                       <span key={index} className="inline-block opacity-0 animate-letter" style={{ animationDelay: `${index * 0.1}s` }}>
                         {letter}
@@ -103,33 +103,32 @@ const HeroSection = () => {
                 </span>
               </p>
 
-              <p className="text-black text-base mt-10 animate-typing">"Supercharge your productivity with our powerful automations"</p>
+              <p className="text-black text-base mt-10 animate-typing">"Supercharge your productivity with our products and services"</p>
               <div className="mt-9 flex justify-center lg:justify-start space-x-4">
-                <a href="#" className="px-8 py-3 text-lg font-bold text-white bg-gray-900 rounded-xl hover:bg-gray-600">
+                <a href="#" className="px-8 py-3 text-lg font-bold text-white bg-gray-900 rounded-xl">
                   Get Started
                 </a>
               </div>
             </div>
 
-            {/* Video Section - Right */}
             <div className="lg:w-1/2 p-4 flex justify-center relative">
-              <div 
-                className="absolute inset-0 opacity-80 rounded-lg pointer-events-none"
+              <div
+                className="absolute inset-0 opacity-40 rounded-lg pointer-events-none"
                 style={{
-                  background: 'linear-gradient(to right, #44BCFF, #FF44EC, #FF675E)', 
-                  filter: 'blur(15px) brightness(0.8)', 
-                  borderRadius: '30px', 
-                  zIndex: 0
+                  filter: 'blur(15px) brightness(0.8)',
+                  zIndex: 0,
                 }}
               ></div>
-              <video
-                className="w-full h-[400px] max-w-full rounded-lg shadow-xl relative z-10"
-                controls
-                src="https://www.example.com/your-video.mp4"
-              >
-                Your browser does not support the video tag.
-              </video>
+              <Image
+                className="w-full h-auto max-w-xs sm:max-w-md lg:max-w-lg mb-20" // Responsive width control
+                src="/Google Cloud.png" // replace with your image path
+                alt="Your Image Description"
+                width={300} // specify the intrinsic width (can be adjusted)
+                height={400} // specify the intrinsic height (can be adjusted)
+                style={{ maxWidth: '90%', height: 'auto' }} // Ensures it scales within the available space
+              />
             </div>
+
           </div>
         </div>
       </section>

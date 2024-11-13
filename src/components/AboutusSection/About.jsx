@@ -1,10 +1,26 @@
 // AboutUs.js
-
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import "./About.css";
 
 const AboutUs = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll(".about-container");
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          section.classList.add("fade-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section className="about-section">
       <div className="about-container">
@@ -24,17 +40,6 @@ const AboutUs = () => {
         <div className="about-text">
           <h2 className="about-title">Who are we..?</h2>
           
-          {/* Google Cloud Partner Logo below the title */}
-          <div className="partner-logo-wrapper">
-            <Image
-              src="/Google Cloud.png" // Replace with actual logo image path
-              alt="Google Cloud Partner"
-              width={200} // Adjust the size as necessary
-              height={50} // Adjust the size as necessary
-              className="partner-logo"
-            />
-          </div>
-          
           <p className="about-description">
             We’re a team of passionate professionals dedicated to delivering
             top-notch solutions to help your business succeed. From the initial
@@ -43,8 +48,8 @@ const AboutUs = () => {
           </p>
           <p className="about-description">
             With a commitment to innovation and excellence, we specialize in
-            custom-tailored automation solutions that save you time, and boost productivity. As a
-            <strong className="text-black"> Official Google Workspace™ Build Partner</strong> we are trusted by top businesses worldwide.
+            custom-tailored automation solutions that save you time and boost productivity. As an
+            <strong className="text-black"> Official Google Workspace™ Build Partner</strong>, we are trusted by top businesses worldwide.
           </p>
 
           <div className="about-buttons">

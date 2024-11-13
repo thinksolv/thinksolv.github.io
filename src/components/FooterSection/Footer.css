@@ -1,0 +1,27 @@
+/* Footer Styles */
+footer, .footer-container {
+    background-color: #ffffff;
+    color: #d1d5db;
+}
+
+/* Social Icons */
+.footer-container ul li a:hover {
+    transform: scale(1.1);
+}
+
+/* Animations for Links */
+.footer-container a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.footer-container a:hover {
+    color: #60a5fa;
+    transform: translateY(-3px);
+}
+
+/* Button and Input Styles */
+.footer-container input[type="email"] {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer-container button:hover {
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2);
+}

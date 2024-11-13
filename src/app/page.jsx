@@ -3,15 +3,14 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import HeroSection from '../components/HeroSection/Hero';
-import FeaturesSection from '../components/Feature';
 import AboutSection from '../components/AboutusSection/About';
-import Testimonials from '../components/Testimonials';
-import OurProducts from '../components/ProductsSection/Ourproducts';
+import Testimonial from '../components/TestimonialsSection/Testimonials';
+import Products from '../components/ProductsSection/Products';
 // import CTASection from '@/app/components/CTA';
 // import PricingSection from '@/app/components/Pricing';
 import ContactSection from '../components/Contact';
-import Footer from '../components/Footer';
-import Faq from '../components/FAQ';
+import Footer from '../components/FooterSection/Footer';
+import Faq from '../components/FAQSection/FAQ';
 
 const Page = () => {
   const [isClient, setIsClient] = useState(false);
@@ -28,9 +27,8 @@ const Page = () => {
     <div>
       <HeroSection />
       <AboutSection />
-      <OurProducts />
-      <FeaturesSection />
-      <Testimonials />
+      <Products />
+      <Testimonial />
       <Faq />
       <ContactSection />
       <Footer />
