@@ -68,23 +68,23 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4">
                     <li>
-                        <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Docs to PDF </a>
+                        <a href="https://workspace.google.com/marketplace/app/pdf_to_docs/28755135712" target="_blank" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Docs to PDF </a>
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Docs to WP Pro </a>
+                        <a href="https://workspace.google.com/marketplace/app/docs_to_wordpress_pro/346830534164" target="_blank" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Docs to WP Pro </a>
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Merge Docs Pro </a>
+                        <a href="https://workspace.google.com/marketplace/app/merge_docs_pro/61337277026" target="_blank" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Merge Docs Pro </a>
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bulk Converter Pro </a>
+                        <a href="https://workspace.google.com/marketplace/app/bulk_converter_pro/327730061402" target="_blank" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bulk Converter Pro </a>
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Docs to Markdown Pro </a>
+                        <a href="https://workspace.google.com/marketplace/app/docs_to_markdown_pro/483386994804" target="_blank" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Docs to Markdown Pro </a>
                     </li>
                 </ul>
             </div>

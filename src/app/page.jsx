@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from '../components/HeroSection/Hero';
 import AboutUs from '../components/AboutusSection/About';
 import Testimonial from '../components/TestimonialsSection/Testimonials';
@@ -28,7 +29,15 @@ const Page = () => {
     <div>
       <HeroSection />
       <AboutUs />
-      <Products />
+      <Router>
+      <Routes>
+        <Route path="/" element={<Products />} />
+        {/* Add other routes for the product details */}
+        <Route path="/https://workspace.google.com/marketplace/app/merge_docs_pro/61337277026" element={<div>Merge Docs Pro Details</div>} />
+        <Route path="/docs-to-wp-pro" element={<div>Docs to WP Pro Details</div>} />
+        {/* Continue for other products */}
+      </Routes>
+      </Router>
       <Services />
       <Testimonial />
       <Faq />
