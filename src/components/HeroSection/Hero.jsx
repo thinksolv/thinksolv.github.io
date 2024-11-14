@@ -116,7 +116,7 @@ const HeroSection = () => {
                 }}
               ></div>
               <Image
-                className="w-full h-auto max-w-xs sm:max-w-md lg:max-w-lg mb-20" // Responsive width control
+                className="w-full h-auto max-w-xs sm:max-w-md lg:max-w-lg " // Responsive width control
                 src="/Google Cloud.png" // replace with your image path
                 alt="Your Image Description"
                 width={300} // specify the intrinsic width (can be adjusted)
