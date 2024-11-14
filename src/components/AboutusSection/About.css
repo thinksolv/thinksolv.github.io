@@ -42,7 +42,8 @@
 .about-image-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #008000, #15aee0, #8a2be2, #FF0000, #FFD700);
+  background-color: #fbfdff;
+  /* background: linear-gradient(135deg, #008000, #15aee0, #8a2be2, #FF0000, #FFD700); */
   opacity: 0.3;
   border-radius: 16px;
   z-index: 5;
@@ -98,12 +99,12 @@
 }
 
 .about-button-primary {
-  background-color: #111827;
+  background-color: #1356e6;
   color: #ffffff;
 }
 
 .about-button-primary:hover {
-  background-color: #216fdc;
+  background-color: #1356e6;
 }
 
 .about-button-secondary {

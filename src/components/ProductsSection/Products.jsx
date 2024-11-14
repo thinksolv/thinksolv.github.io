@@ -1,4 +1,3 @@
-// ProductsShowcase.js
 import React, { useEffect } from 'react';
 import { FaWordpress, FaFilePdf, FaFileAlt } from "react-icons/fa";
 import { PiArrowsInSimpleBold } from "react-icons/pi";
@@ -23,7 +22,7 @@ const Products = () => {
       description: 'The most powerful Google Docs to Markdown converter to streamline your workflow and save time.',
     },
     {
-      icon: <PiArrowsInSimpleBold size={40}/>,
+      icon: <PiArrowsInSimpleBold size={40} />,
       title: 'Bulk Converter Pro',
       description: 'The user friendly Bulk Converter Pro converts any files from one format to another format .',
     },
@@ -37,7 +36,6 @@ const Products = () => {
       title: 'Docs to PDF',
       description: 'Bulk Converts Google Docs into PDF files and downloads them as zip file.',
     },
-    
   ];
 
   useEffect(() => {
@@ -58,21 +56,21 @@ const Products = () => {
   }, []);
 
   return (
-    <section className="products-section">
-      <div className="products-container">
-        <h2 className="section-title">Our Products</h2>
+    <section className="product-section">
+      <div className="product-container">
+        <h2 className="product-section-title">Our Products</h2>
         <div className="product-cards">
           {products.map((product, index) => (
             <div className="product-card" key={index}>
-              <div className="product-top">
-                <div className="product-icon">
+              <div className="product-card-top">
+                <div className="product-card-icon">
                   {product.icon}
                 </div>
-                <h3 className="product-name">{product.title}</h3>
+                <h3 className="product-card-name">{product.title}</h3>
               </div>
-              <div className="product-bottom">
-                <p className="product-description">{product.description}</p>
-                <div className="learn-more">
+              <div className="product-card-bottom">
+                <p className="product-card-description">{product.description}</p>
+                <div className="product-learn-more">
                   Learn More <FiArrowRight className="arrow" />
                 </div>
               </div>

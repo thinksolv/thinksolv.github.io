@@ -1,9 +1,10 @@
 // FAQ.js
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./FAQ.css";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const itemRefs = useRef([]);
 
   const faqs = [
     {
@@ -28,6 +29,26 @@ const FAQ = () => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("appear");
+            observer.unobserve(entry.target); // Stop observing once the animation is triggered
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    itemRefs.current.forEach((item) => {
+      if (item) observer.observe(item);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="faq-section">
       <h2 className="faq-title">Frequently Asked Questions</h2>
@@ -37,6 +58,7 @@ const FAQ = () => {
             key={index}
             className={`faq-item ${activeIndex === index ? "active" : ""}`}
             onClick={() => handleClick(index)}
+            ref={(el) => (itemRefs.current[index] = el)}
           >
             <div className="faq-question">
               {faq.question}

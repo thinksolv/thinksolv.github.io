@@ -28,7 +28,7 @@ const AboutUs = () => {
         <div className="about-image-wrapper">
           <div className="about-image-gradient"></div>
           <Image
-            src="/path-to-your-image.jpg" // Replace with your actual image path
+            src="/Cloud combination.jpg" // Replace with your actual image path
             alt="Team"
             width={500} // Sets maximum width
             height={500} // Keeps aspect ratio
@@ -56,9 +56,9 @@ const AboutUs = () => {
             <a href="#" className="about-button-primary">
               Contact Us
             </a>
-            <a href="#" className="about-button-secondary">
+            {/* <a href="#" className="about-button-secondary">
               Our Story
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

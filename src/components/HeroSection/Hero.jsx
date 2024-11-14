@@ -47,16 +47,14 @@ const HeroSection = () => {
 
             {/* Desktop Menu Links */}
             <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10 xl:space-x-16">
-              <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50"> Features </a>
-              <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50"> Pricing </a>
-              <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50"> Automation </a>
+              <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50"> Products </a>
+              <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50"> Services </a>
             </div>
 
             {/* Desktop Sign-in/Sign-up Links */}
             <div className="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-10">
-              <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50"> Customer Login </a>
               <a href="#" className="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-gray-900 rounded-xl hover:bg-gray-600">
-                Sign up
+                Contact Us
               </a>
             </div>
           </div>
@@ -66,12 +64,10 @@ const HeroSection = () => {
             <nav className="lg:hidden mt-6">
               <div className="px-1 py-8">
                 <div className="grid gap-y-7">
-                  <a href="#" className="p-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-xl"> Features </a>
-                  <a href="#" className="p-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-xl"> Pricing </a>
-                  <a href="#" className="p-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-xl"> Automation </a>
-                  <a href="#" className="p-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-xl"> Customer Login </a>
+                  <a href="#" className="p-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-xl"> Products </a>
+                  <a href="#" className="p-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-xl"> Services </a>
                   <a href="#" className="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-gray-900 rounded-xl hover:bg-gray-600">
-                    Sign up
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -105,7 +101,7 @@ const HeroSection = () => {
 
               <p className="text-black text-base mt-10 animate-typing">"Supercharge your productivity with our products and services"</p>
               <div className="mt-9 flex justify-center lg:justify-start space-x-4">
-                <a href="#" className="px-8 py-3 text-lg font-bold text-white bg-gray-900 rounded-xl">
+                <a href="#" className="px-8 py-3 text-lg font-bold text-white bg-blue-600 rounded-xl">
                   Get Started
                 </a>
               </div>

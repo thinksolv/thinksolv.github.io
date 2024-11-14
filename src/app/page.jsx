@@ -3,12 +3,13 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import HeroSection from '../components/HeroSection/Hero';
-import AboutSection from '../components/AboutusSection/About';
+import AboutUs from '../components/AboutusSection/About';
 import Testimonial from '../components/TestimonialsSection/Testimonials';
 import Products from '../components/ProductsSection/Products';
+import Services from '../components/ServicesSection/Services';
 // import CTASection from '@/app/components/CTA';
 // import PricingSection from '@/app/components/Pricing';
-import ContactSection from '../components/Contact';
+import ContactForm from '../components/ContactSection/ContactForm';
 import Footer from '../components/FooterSection/Footer';
 import Faq from '../components/FAQSection/FAQ';
 
@@ -26,11 +27,12 @@ const Page = () => {
   return (
     <div>
       <HeroSection />
-      <AboutSection />
+      <AboutUs />
       <Products />
+      <Services />
       <Testimonial />
       <Faq />
-      <ContactSection />
+      <ContactForm />
       <Footer />
     </div>
   );
