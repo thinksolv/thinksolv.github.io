@@ -89,7 +89,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div>
+            <div style={{display:'none'}}>
                 <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">Services</p>
 
                 <ul className="mt-6 space-y-4">

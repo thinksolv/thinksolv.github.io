@@ -65,3 +65,16 @@ animation: typingEffect 4s steps(50) 1s forwards, blink 0.75s step-end infinite;
   border-color: transparent;
 }
 }
+
+/* Ensure the dropdown stays in place and visible */
+.grouped-item {
+  padding: 8px 16px;
+  background-color: #474141;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.grouped-item:hover {
+  background-color: #2772ed;
+}
+
