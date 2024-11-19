@@ -1,47 +1,49 @@
 import { Feature } from "@/types/feature";
+import { FaFilePdf, FaFileWord, FaSyncAlt, FaMarkdown, FaWordpress } from "react-icons/fa"; // Added FaWordpress
+import { BiMerge } from "react-icons/bi";
 
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Crafted for SaaS",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+    icon: FaFilePdf,
+    title: "Docs to PDF",
+    description: "Easily convert Google Docs to high-quality PDFs Within in Seconds on our Tool.",
+    url: "https://workspace.google.com/marketplace/app/docs_to_pdf/302636103705", // URL for this product
   },
   {
     id: 2,
-    icon: "/images/icon/icon-02.svg",
-    title: "High-quality Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+    icon: FaFileWord,
+    title: "PDF to Docs",
+    description: "Seamlessly transform PDF documents into editable Google Docs.",
+    url: "https://workspace.google.com/marketplace/app/pdf_to_docs/28755135712", // URL for this product
   },
   {
     id: 3,
-    icon: "/images/icon/icon-03.svg",
-    title: "Next.js 13 + TypeScript",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+    icon: BiMerge,
+    title: "Merge Docs Pro",
+    description: "Combine multiple Google Docs into one comprehensive document seamlessly.",
+    url: "https://workspace.google.com/marketplace/app/merge_docs_pro/61337277026", // URL for this product
   },
   {
     id: 4,
-    icon: "/images/icon/icon-04.svg",
-    title: "Sanity Blog and Docs",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+    icon: FaSyncAlt,
+    title: "Bulk Converter Pro",
+    description: "Process large batches of file conversions effortlessly.",
+    url: "https://workspace.google.com/marketplace/app/bulk_converter_pro/327730061402", // URL for this product
   },
   {
     id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "DB, Auth and Stripe",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+    icon: FaMarkdown,
+    title: "Docs to Markdown Pro",
+    description: "Convert Google Docs to clean and optimized Markdown files.",
+    url: "https://workspace.google.com/marketplace/app/docs_to_markdown_pro/483386994804", // URL for this product
   },
   {
     id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Regular Free Updates",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+    icon: FaWordpress,
+    title: "Docs to WordPress Pro",
+    description: "Publish Google Docs content directly to your WordPress site with ease.",
+    url: "https://workspace.google.com/marketplace/app/docs_to_wordpress_pro/346830534164", // URL for this product
   },
 ];
 

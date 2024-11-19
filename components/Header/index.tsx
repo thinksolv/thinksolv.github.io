@@ -41,16 +41,16 @@ const Header = () => {
             <Image
               src="/images/logo/Thinksolv Logo.png"
               alt="logo"
-              width={120}
+              width={200}
               height={80}
-              className="hidden w-full dark:block"
+              className="hidden  dark:block"
             />
             <Image
               src="/images/logo/Thinksolv Logo.png"
               alt="logo"
-              width={120}
-              height={130}
-              className="w-full dark:hidden"
+              width={200}
+              height={80}
+              className=" dark:hidden"
             />
           </a>
 
@@ -155,17 +155,10 @@ const Header = () => {
             <ThemeToggler />
 
             <Link
-              href="https://github.com/NextJSTemplates/solid-nextjs"
-              className="text-regular font-medium text-waterloo hover:text-primary"
-            >
-              GitHub Repo 🌟
-            </Link>
-
-            <Link
               href="https://nextjstemplates.com/templates/solid"
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
-              Get Pro 🔥
+              Contact Us
             </Link>
           </div>
         </div>

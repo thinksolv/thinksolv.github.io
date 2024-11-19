@@ -14,24 +14,30 @@ const Hero = () => {
       <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className=" md:w-1/2">
+            <div className=" md:w-1/2 text-black dark:text-white">
               {/* <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 Solid - A Complete SaaS Web Template
+                 Solid - A Complete SaaS Web Template
               </h4> */}
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Free Next.js Template for {"   "}
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                  SaaS
-                </span>
+               Building Solutions {"   "}
+               <span className="relative block">
+                {/* {["T", "h", "o", "u", "g", "h", "t", "f", "u", "l", "l", "y"].map((letter, index) => (
+                  <span
+                    key={index}
+                    className="inline-block opacity-0 animate-letterEffect bg-clip-text bg-gradient-to-r "
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    {letter}
+                  </span>
+                } */}
+                <h1>Thoughtfully</h1>
+              </span>
               </h1>
               <p>
-                Solid Pro - Packed with all the key integrations you need for
-                swift SaaS startup launch, including - Auth, Database, Sanity
-                Blog, Essential Components, Pages and More. Built-winth -
-                Next.js 13, React 18 and TypeScript.
+                Supercharge Your Productivity With Our Products And Services
               </p>
 
-              <div className="mt-10">
+              {/* <div className="mt-10">
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
                     <input
@@ -52,8 +58,8 @@ const Hero = () => {
 
                 {/* <p className="mt-5 text-black dark:text-white">
                   Try for free no credit card required.
-                </p> */}
-              </div>
+                </p> 
+              </div> */}
             </div>
 
             <div className="animate_right hidden md:w-1/2 lg:block">
@@ -79,16 +85,16 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className=" relative aspect-[700/444] w-full">
+                <div className=" relative aspect-[1300/400] w-full">
                   <Image
                     className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero-light.svg"
+                    src="/images/hero/Google_Cloud_Partner (2).png"
                     alt="Hero"
                     fill
                   />
                   <Image
                     className="hidden shadow-solid-l dark:block"
-                    src="/images/hero/hero-dark.svg"
+                    src="/images/hero/Google_Cloud_Partner.png"
                     alt="Hero"
                     fill
                   />

@@ -29,7 +29,7 @@ module.exports = {
         black: "#181C31",
         blackho: "#2C3149",
         blacksection: "#1C2136",
-        primary: "#006400",
+        primary: "#0063EC",
         primaryho: "#0063EC",
         meta: "#20C5A8",
         waterloo: "#757693",
@@ -37,6 +37,8 @@ module.exports = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
+        gradientStart: '#ff0000', // Start color of gradient
+        gradientEnd: '#ff0000', // End color of gradient
       },
       fontSize: {
         metatitle: ["12px", "20px"],
@@ -135,11 +137,16 @@ module.exports = {
           "0%, 100%": { transform: "translateY(100%)" },
           "50%": { transform: "translateY(0)" },
         },
+        letterAnimation: {
+          '0%': { opacity: 0, transform: 'translateY(10px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
       },
       animation: {
         line1: "line 3s linear infinite",
         line2: "line 6s linear infinite",
         line3: "line 9s linear infinite",
+        letterEffect: 'letterAnimation 0.5s ease forwards',
       },
     },
   },

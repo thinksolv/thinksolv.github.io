@@ -1,6 +1,9 @@
+import { IconType } from "react-icons";
+
 export type Feature = {
   id: number;
-  icon: string;
+  icon: IconType;
   title: string;
   description: string;
+  url: string;
 };
