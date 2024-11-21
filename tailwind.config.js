@@ -21,9 +21,10 @@ module.exports = {
         stroke: "#EEEEEE",
         strokedark: "#2D2F40",
         hoverdark: "#252A42",
-        titlebg: "#ADFFF8",
+        titlebg: "#FFD1D1",
+        titlebg1: '#B0E0E6',
         titlebg2: "#FFEAC2",
-        titlebgdark: "#46495A",
+        titlebgdark: "#46496A",
         btndark: "#292E45",
         white: "#FFFFFF",
         black: "#181C31",
@@ -37,8 +38,8 @@ module.exports = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
-        gradientStart: '#ff0000', // Start color of gradient
-        gradientEnd: '#ff0000', // End color of gradient
+        // gradientStart: '#ff0000', // Start color of gradient
+        // gradientEnd: '#ff0000', // End color of gradient
       },
       fontSize: {
         metatitle: ["12px", "20px"],

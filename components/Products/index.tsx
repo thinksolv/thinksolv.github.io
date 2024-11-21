@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import featuresData from "./featuresData";
-import SingleFeature from "./SingleFeature";
+import featuresData from "./productsData";
+import SingleProduct from "./SingleProduct";
 import SectionHeader from "../Common/SectionHeader";
 
-const Feature = () => {
+const Product = () => {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
@@ -13,10 +13,9 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "",
-              subtitle: "Our Products",
-              description: `A team of passionate professionals dedicated to
-               delivering top-notch solutions to help your business succeed.`,
+              title: "Our Products",
+              subtitle: "Streamlining Your Workflow with Powerful Solutions",
+              description: `A team of passionate professionals delivering cutting-edge products designed to elevate your business and streamline operations.`,
             }}
           />
           {/* <!-- Section Title End --> */}
@@ -25,7 +24,7 @@ const Feature = () => {
             {/* <!-- Features item Start --> */}
 
             {featuresData.map((feature, key) => (
-              <SingleFeature feature={feature} key={key} />
+              <SingleProduct feature={feature} key={key} />
             ))}
             {/* <!-- Features item End --> */}
           </div>
@@ -37,4 +36,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default Product;

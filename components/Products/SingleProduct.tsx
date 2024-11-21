@@ -2,7 +2,7 @@ import React from "react";
 import { Feature } from "@/types/feature";
 import { motion } from "framer-motion";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
+const SingleProduct = ({ feature }: { feature: Feature }) => {
   const { icon: Icon, title, description, url } = feature; // Include `url`
 
   return (
@@ -44,7 +44,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         className="animate_left md:w-2/5 lg:w-1/2 mt-4"
       >
         <a
-          href={url} // Dynamically set the URL
+          href={url} target="_blank" // Dynamically set the URL
           className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
         >
           <span className="duration-300 group-hover:pr-2">Know More</span>
@@ -65,4 +65,4 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   );
 };
 
-export default SingleFeature;
+export default SingleProduct;

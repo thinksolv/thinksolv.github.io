@@ -7,7 +7,7 @@ const featuresData: Feature[] = [
     id: 1,
     icon: FaFilePdf,
     title: "Docs to PDF",
-    description: "Easily convert Google Docs to high-quality PDFs Within in Seconds on our Tool.",
+    description: "Easily convert Google Docs to high-quality PDFs Within Seconds",
     url: "https://workspace.google.com/marketplace/app/docs_to_pdf/302636103705", // URL for this product
   },
   {

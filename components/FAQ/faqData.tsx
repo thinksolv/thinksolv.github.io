@@ -3,18 +3,18 @@ import { FAQ } from "@/types/faq";
 const faqData: FAQ[] = [
   {
     id: 1,
-    quest: "Lorem ipsum dolor sit amet, consectetur",
-    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+    quest: "Why choose Thinksolv Technologies?",
+    ans: "Our thoughtful approach to problem-solving, innovative solutions, and commitment to client success make us a trusted partner. As an official Google Cloud partner, we ensure high-quality services and reliable integrations.",
   },
   {
     id: 2,
-    quest: "Lorem ipsum dolor sit amet, consectetur",
-    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+    quest: "How can Thinksolv help streamline businesses?",
+    ans: "We help businesses enhance productivity by automating workflows, leveraging AI for document processing, and offering user-friendly tools that integrate seamlessly into existing systems.",
   },
   {
     id: 3,
-    quest: "Lorem ipsum dolor sit amet, consectetur",
-    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+    quest: "What services does Thinksolv Technologies offer?",
+    ans: "Thinksolv specializes in workflow automation, AppSheet development, Document AI, and tailored SaaS solutions. We also provide various tools like Docs to PDF, PDF to Docs, Merge Docs Pro, and more to simplify your work processes.",
   },
 ];
 

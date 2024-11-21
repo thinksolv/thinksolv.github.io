@@ -9,21 +9,21 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Features",
+    title: "Products",
     newTab: false,
     path: "/#features",
   },
   {
     id: 2.1,
+    title: "Services",
+    newTab: false,
+    path: "/featuresTab",
+  },
+  {
+    id: 2.2,
     title: "Blog",
     newTab: false,
     path: "/blog",
-  },
-  {
-    id: 2.3,
-    title: "Docs",
-    newTab: false,
-    path: "/docs",
   },
   {
     id: 3,
@@ -49,12 +49,6 @@ const menuData: Menu[] = [
         path: "/auth/signup",
       },
       {
-        id: 35,
-        title: "Docs",
-        newTab: false,
-        path: "/docs",
-      },
-      {
         id: 35.1,
         title: "Support",
         newTab: false,
@@ -69,12 +63,6 @@ const menuData: Menu[] = [
     ],
   },
 
-  {
-    id: 4,
-    title: "Support",
-    newTab: false,
-    path: "/support",
-  },
 ];
 
 export default menuData;

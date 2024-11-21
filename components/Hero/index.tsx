@@ -20,18 +20,9 @@ const Hero = () => {
               </h4> */}
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
                Building Solutions {"   "}
-               <span className="relative block">
-                {/* {["T", "h", "o", "u", "g", "h", "t", "f", "u", "l", "l", "y"].map((letter, index) => (
-                  <span
-                    key={index}
-                    className="inline-block opacity-0 animate-letterEffect bg-clip-text bg-gradient-to-r "
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {letter}
-                  </span>
-                } */}
-                <h1>Thoughtfully</h1>
-              </span>
+               <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-2 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
+                  Thoughtfully
+                </span>
               </h1>
               <p>
                 Supercharge Your Productivity With Our Products And Services

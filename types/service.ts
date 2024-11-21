@@ -1,7 +1,7 @@
 export type Service = {
   id: number;
-  icon: string;
   title: string;
   description: string;
-  link?: string;
+  image: string; // This will hold the path to the image (instead of icon)
+  url: string; // Link for the service detail page or product page
 };

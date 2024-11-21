@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
-          <div className="py-20 lg:py-25">
+          <div className="py-20 lg:py-20">
             <div className="flex flex-wrap gap-8 lg:justify-between lg:gap-0">
               <motion.div
                 variants={{
@@ -60,7 +60,7 @@ const Footer = () => {
                 </a> */}
               </motion.div>
 
-              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
+              <div className="flex w-full flex-col gap- md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-9/12">
                 <motion.div
                   variants={{
                     hidden: {
@@ -265,12 +265,12 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  {/* <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Newsletter
+                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                    Address
                   </h4>
-                  <p className="mb-4 w-[90%]">
-                    Subscribe to receive future updates
-                  </p> */}
+                  <p className="mb-4 w-[100%]">
+                  Thinksolv Technologies Pvt Ltd,<br/> Forge Factory, KCT Tech Park,<br/> Coimbatore - 641 049, India.
+                  </p>
 
                   {/* <form action="#">
                     <div className="relative">
@@ -419,7 +419,7 @@ const Footer = () => {
                   </a>
                 </li> */}
                 <li>
-                  <a href="https://www.linkedin.com/in/vikramaruchamy/" aria-label="social icon">
+                  <a href="https://www.linkedin.com/in/vikramaruchamy/" target='_blank' aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -443,7 +443,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://x.com/vikramaruchamy" aria-label="social icon">
+                  <a href="https://x.com/vikramaruchamy" target='_blank' aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -467,7 +467,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="#" target='_blank' aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
